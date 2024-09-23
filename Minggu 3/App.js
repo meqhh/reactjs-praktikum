@@ -5,11 +5,9 @@ import { Routes, Route, Link as RouterLink } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import StoreIcon from '@mui/icons-material/Store';
 import InfoIcon from '@mui/icons-material/Info';
-import Person from '@mui/icons-material/Person';
 import logo from './logo.png';
 import Produk from './Produk';  // Komponen Produk
 import Tentang from './Tentang';  // Komponen Tentang
-import Register from './Register';  // Komponen Register
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
@@ -38,7 +36,6 @@ function Layout() {
                 <Button component={RouterLink} to="/" color="inherit" startIcon={<HomeIcon />}>Beranda</Button>
                 <Button component={RouterLink} to="/produk" color="inherit" startIcon={<StoreIcon />}>Produk</Button>
                 <Button component={RouterLink} to="/tentang" color="inherit" startIcon={<InfoIcon />}>Tentang</Button>
-                <Button component={RouterLink} to="/register" color="inherit" startIcon={<Person />}>Register</Button>
                 </Toolbar>
             </AppBar>
         <Slider {...settings}>
@@ -155,7 +152,6 @@ function Layout() {
                 } />
                 <Route path="/produk" element={<Produk />} />
                 <Route path="/tentang" element={<Tentang />} />
-                <Route path="/register" element={<Register />} />
             </Routes>
         </Container>
         <Box component="footer" sx={{ bgcolor: '#4caf50', color: '#fff', py: 3, mt: 'auto' }}>
