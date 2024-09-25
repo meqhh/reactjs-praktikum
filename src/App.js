@@ -176,7 +176,7 @@ function Layout() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Typography variant="h6" gutterBottom>
-                            Find Us On
+                            Find Us On!
                         </Typography>
                     </Grid>
                 </Grid>
